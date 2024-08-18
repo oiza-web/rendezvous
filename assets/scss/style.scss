@@ -122,5 +122,31 @@
 
 .line-height {
   line-height: 50px;
-  // white-space: nowrap;
+}
+
+.hero-background-image {
+  background-image: url('/images/background-image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 640px;
+}
+
+.hero-content {
+  margin-top: -174px;
+  padding: 0 20px;
+
+  &__text {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  &__search {
+    height: 100px;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    width: 600px;
+  }
 }

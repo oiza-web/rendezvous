@@ -1,6 +1,6 @@
 <template>
-  <section class="bg">
-    <v-container class="py-9">
+  <main class="bg">
+    <v-container fluid class="py-9">
       <v-row class="justify-space-between ">
         <v-col cols="12" lg="4">
           <img src="/images/rendezvous-logo.png" height="40" />
@@ -39,7 +39,7 @@
         </v-col>
       </v-row>
     </v-container>
-  </section>
+  </main>
 </template>
 
 <script>

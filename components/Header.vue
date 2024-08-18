@@ -14,8 +14,8 @@
       </v-sheet>
 
       <v-list shaped dense>
-        <template v-for="item in items">
-          <v-list-item color="cta" dark nuxt :to="item.to" :key="item.text">
+        <template>
+          <v-list-item   v-for="item in items" color="cta" dark nuxt :to="item.to" :key="item.text">
             <v-list-item-action>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-action>
