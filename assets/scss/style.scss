@@ -84,12 +84,12 @@
   font-size: 19px !important;
 }
 
-.font__20 {
-  font-size: 20px !important;
+.font__24 {
+  font-size: 24px !important;
 }
 
-.font__30 {
-  font-size: 30px !important;
+.font__32 {
+  font-size: 32px !important;
 }
 
 .font__35 {
@@ -124,6 +124,9 @@
   line-height: 50px;
 }
 
+.darken-image{
+  filter: brightness(50%);
+}
 .hero-background-image {
   background-image: url('/images/background-image.png');
   background-size: cover;
@@ -138,7 +141,6 @@
 
   &__text {
     color: white;
-    font-size: 32px;
     margin-bottom: 10px;
   }
 
