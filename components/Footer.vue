@@ -1,6 +1,6 @@
 <template>
   <main class="bg">
-    <v-container fluid class="py-9">
+    <v-container fluid class="py-9 mx-4">
       <v-row class="justify-space-between ">
         <v-col cols="12" lg="4">
           <img src="/images/rendezvous-logo.png" height="40" />

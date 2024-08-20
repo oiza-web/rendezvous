@@ -43,7 +43,7 @@
         </div>
         <!-- Nav for web -->
         <div class="d-flex align-center" v-if="$vuetify.breakpoint.lgAndUp">
-          <v-btn nuxt to="#" class="font__15    primary--text  font-weight-bold" text>Discover</v-btn>
+          <v-btn nuxt to="/events" class="font__15    primary--text  font-weight-bold" text>Discover</v-btn>
           <v-btn nuxt to="#events" class="font__15  primary--text  font-weight-bold" text>About us</v-btn>
           <v-btn nuxt to="#faq" class="font__15  primary--text  font-weight-bold" text>FAQs</v-btn>
           <v-btn nuxt to="#contact" class="font__15   primary--text  font-weight-bold" text>Contact us</v-btn>
@@ -118,7 +118,7 @@ export default {
     {
       icon: 'mdi-find-replace',
       text: 'DISCOVER',
-      to: '#discover'
+      to: '/events'
     },
     {
       icon: 'mdi-information',

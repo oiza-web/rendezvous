@@ -2,7 +2,7 @@
   <v-app id="default-layout">
     <Header />
 
-    <v-main class="white">
+    <v-main class="white ">
       <nuxt />
     </v-main>
 

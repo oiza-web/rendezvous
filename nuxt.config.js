@@ -36,7 +36,12 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/axios'],
+  axios: {
+    baseURL: 'https://rendezvous-events.onrender.com',
+  },
+
+  loading: ['#432361'],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {

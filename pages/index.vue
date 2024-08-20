@@ -1,8 +1,8 @@
 <template>
   <section>
     <HeroComponent />
-    <TrendingEvents />
-    <DiscoverEvents />
+    <TrendingEvents class="mx-4" />
+    <DiscoverEvents  class="mx-4"/>
   </section>
 </template>
 
