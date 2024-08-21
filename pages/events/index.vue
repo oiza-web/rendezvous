@@ -16,10 +16,9 @@ export default {
     async getAllEvents() {
       try {
         const response = await this.$axios.$get('/events');
-        console.log(response.data.allEvents);
         this.events = response.data.allEvents;
       } catch (error) {
-        console.error('Error fetching events:', error);
+        throw error
       }
     },
   },

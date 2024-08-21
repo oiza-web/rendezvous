@@ -26,7 +26,6 @@ export default {
     async getAllEvents() {
       try {
         const response = await this.$axios.$get('/events');
-        console.log(response.data.allEvents);
         this.events = response.data.allEvents.slice(0, 3);;
       } catch (error) {
         throw error
