@@ -59,7 +59,6 @@ export default {
             events: this.events,
           },
         })
-        console.log(this.events)
       } catch (error) {
         throw error
       }

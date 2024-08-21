@@ -29,8 +29,8 @@ export default {
         console.log(response.data.allEvents);
         this.events = response.data.allEvents.slice(0, 3);;
       } catch (error) {
-        console.error('Error fetching events:', error);
-      }
+        throw error
+v      }
     },
   },
   mounted() {

@@ -17,7 +17,6 @@ methods: {
   getOneEvent(){
     const id = this.$route.params.id
     this.$axios.$get(`/events/${id}`).then((events) => {
-      console.log(events.data.event);
       this.eventDetails = events.data.event
     })
   }
