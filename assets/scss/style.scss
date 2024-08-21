@@ -16,6 +16,10 @@
   opacity: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
 .boxed__container {
   @media (min-width: 1264px) {
     max-width: 1280px !important;
@@ -89,7 +93,7 @@
 }
 
 .hero-content {
-  margin-top: -174px;
+  // margin-top: -174px;
   padding: 0 20px;
 
   &__text {
@@ -102,7 +106,6 @@
     color: black;
     background-color: white;
     border-radius: 20px;
-    width: 600px;
   }
 }
 

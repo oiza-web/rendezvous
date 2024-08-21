@@ -1,7 +1,7 @@
 <template>
   <section>
-    <HeroComponent />
-    <TrendingEvents class="mx-4" />
+    <HeroComponent  />
+    <TrendingEvents :events="events" class="mx-4" />
     <DiscoverEvents  class="mx-4"/>
   </section>
 </template>
@@ -16,6 +16,25 @@ export default {
     HeroComponent,
     TrendingEvents,
     DiscoverEvents
-  }
+  },
+  data() {
+    return {
+      events: []
+    }
+  },
+  methods: {
+    async getAllEvents() {
+      try {
+        const response = await this.$axios.$get('/events');
+        console.log(response.data.allEvents);
+        this.events = response.data.allEvents.slice(0, 3);;
+      } catch (error) {
+        console.error('Error fetching events:', error);
+      }
+    },
+  },
+  mounted() {
+    this.getAllEvents();
+  },
 }
 </script>

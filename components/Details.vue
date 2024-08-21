@@ -20,7 +20,7 @@
                         d="M19.5 3H16.5V1.5H15V3H9V1.5H7.5V3H4.5C3.675 3 3 3.675 3 4.5V19.5C3 20.325 3.675 21 4.5 21H19.5C20.325 21 21 20.325 21 19.5V4.5C21 3.675 20.325 3 19.5 3ZM19.5 19.5H4.5V9H19.5V19.5ZM19.5 7.5H4.5V4.5H7.5V6H9V4.5H15V6H16.5V4.5H19.5V7.5Z"
                         fill="#9B51E0" />
                     </svg>
-                    <p class="mx-2">{{ eventDetails.date }}</p>
+                    <p class="mx-2">{{ formatDate(eventDetails.date) }}</p>
                   </div>
                   <div class="d-flex ml-6">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +32,7 @@
                         fill="#9B51E0" />
                     </svg>
                     <p class="mx-2">
-                      {{ eventDetails.time }}</p>
+                      {{ formatTime(eventDetails.time) }}</p>
                   </div>
                 </div>
                 <div class="d-flex">
@@ -84,7 +84,7 @@
                   <div>
                     <p class="font__20 font-weight-bold">Price</p>
                     <p class="font__16 primary--text font-weight-bold"> {{ eventDetails.price == 0 ? "FREE" :
-                      eventDetails.price }}</p>
+                       eventDetails.price }}</p>
                   </div>
                 </div>
                 <v-btn color="#783EAD" class="mt-6 font__16 font-weight-bold white--text" depressed>Buy now</v-btn>
@@ -112,7 +112,29 @@ export default {
   },
   data() {
     return {}
-  }
+  },
+  methods: {
+    formatDate(dateString) {
+      const date = new Date(dateString)
+      const options = {
+        weekday: 'long',
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }
+      return date.toLocaleDateString('en-US', options)
+    },
+    formatTime(timeString) {
+      const time = new Date(`1970-01-01T${timeString}`);
+      const hours = time.getHours();
+      const amPm = hours >= 12 ? 'P.M' : 'A.M';
+      const formattedHours = hours % 12 || 12;
+      return `${formattedHours}${amPm}`;
+    },
+    formatPrice(price) {
+      return `₦${price.toLocaleString('en-NG', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+    },
+  },
   }
 </script>
 

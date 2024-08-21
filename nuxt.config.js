@@ -53,7 +53,7 @@ export default {
           primary: '#432361',
           accent: '#FFFFFF',
           secondary: colors.amber.darken3,
-          info: 'black',
+          info: '#000000',
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,

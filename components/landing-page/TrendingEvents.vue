@@ -1,7 +1,7 @@
 <template>
   <section class="mt-8">
     <v-container fluid>
-      <div class="d-flex justify-space-between px-12 my-4 ">
+      <div class="d-flex justify-space-between px-12 my-4 flex-lg-row  flex-sm-column flex-md-column">
         <h4 class="font__32">Trending events</h4>
         <nuxt-link to="/events">
           <div class="d-flex font__10 primary--text font-weight-medium">
@@ -27,39 +27,44 @@ export default {
   components: {
     Events
   },
-  data() {
-    return {
-      events: [
-        {
-          title: 'ISWIS Live show',
-          imageUrl: '/images/two-ladies.png',
-          date: `Sun, Oct 3rd 6pm`,
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          numberTicketsLeft: '5',
-          daysLeft: 2,
-        },
-        {
-          title: 'ISWIS Live show',
-          imageUrl: '/images/nativ.png',
-          date: `Sun, Oct 3rd 6pm`,
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          numberTicketsLeft: '5',
-          daysLeft: 2,
-        },
-        {
-          title: 'ISWIS Live show',
-          imageUrl: '/images/basket-mouth.png',
-          date: `Sun, Oct 3rd 6pm`,
-          description:
-            '$Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-          numberTicketsLeft: '5',
-          daysLeft: 2,
-        },
-      ],
+  props:{
+    events:{
+      type: []
     }
   },
+  // data() {
+  //   return {
+  //     events: [
+  //       {
+  //         title: 'ISWIS Live show',
+  //         imageUrl: '/images/two-ladies.png',
+  //         date: `Sun, Oct 3rd 6pm`,
+  //         description:
+  //           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  //         numberTicketsLeft: '5',
+  //         daysLeft: 2,
+  //       },
+  //       {
+  //         title: 'ISWIS Live show',
+  //         imageUrl: '/images/nativ.png',
+  //         date: `Sun, Oct 3rd 6pm`,
+  //         description:
+  //           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  //         numberTicketsLeft: '5',
+  //         daysLeft: 2,
+  //       },
+  //       {
+  //         title: 'ISWIS Live show',
+  //         imageUrl: '/images/basket-mouth.png',
+  //         date: `Sun, Oct 3rd 6pm`,
+  //         description:
+  //           '$Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  //         numberTicketsLeft: '5',
+  //         daysLeft: 2,
+  //       },
+  //     ],
+  //   }
+  // },
 }
 </script>
 

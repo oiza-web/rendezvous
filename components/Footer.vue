@@ -3,8 +3,8 @@
     <v-container fluid class="py-9 mx-4">
       <v-row class="justify-space-between ">
         <v-col cols="12" lg="4">
-          <img src="/images/rendezvous-logo.png" height="40" />
-          <div class="font-weight-light font__12 my-4">Your Personal Event Sherpa: Curating <br> Awesome, One Click at a
+          <img src="/images/rendezvous-logo.png" height="80" />
+          <div class="font-weight-light font__14 my-4">Your Personal Event Sherpa: Curating <br> Awesome, One Click at a
             Time.
           </div>
 
@@ -13,13 +13,13 @@
         <v-col sm="12" lg="8" v-if="$vuetify.breakpoint.smAndUp">
           <div class="d-flex justify-space-between">
 
-            <v-col cols="4" class="font-weight-thin font__12 ml-7" lg="3">
+            <v-col cols="4" class="font-weight-thin font__14 ml-7" lg="3">
               <div class="font-weight-bold font__16">Features</div>
               <div class="mt-1">Event discovery</div>
               <div class="mt-1">Ticketing</div>
             </v-col>
 
-            <v-col cols="4" class="font-weight-light font__12" lg="3">
+            <v-col cols="4" class="font-weight-light font__14" lg="3">
               <div class="font-weight-bold font__16">Company</div>
               <div class="mt-1">About us</div>
               <div class="mt-1">FAQs</div>
@@ -28,7 +28,7 @@
 
             </v-col>
 
-            <v-col md="2" :class="['font-weight-medium font__12', { 'd-none': $vuetify.breakpoint.mdAndDown }]" lg="3">
+            <v-col md="2" :class="['font-weight-medium font__14', { 'd-none': $vuetify.breakpoint.mdAndDown }]" lg="3">
               <div class="font-weight-bold font__16">Contact us</div>
               <div class="mt-1 font-weight-bold">info@events.com</div>
               <div class="mt-1">+234 701 345 6789</div>
