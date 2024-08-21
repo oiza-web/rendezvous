@@ -9,7 +9,7 @@
         v-for="(event, i) in allEvents"
         :key="i"
       >
-        <v-card height="488" class="w-100" outlined :to="`/events/${event.id}`">
+        <v-card height="448" class="w-100" outlined :to="`/events/${event.id}`">
           <v-img :src="event.imageUrl" height="240" cover />
           <v-card-text class="primary--text font__12 font-weight-bold">{{
             event.title
@@ -18,10 +18,10 @@
             <div class="font__15 mx-4 font-weight-black primary--text">
               {{ formatDate(event.date) }}
             </div>
-            <div class="font__14 mx-4 primary--text font-weight-light h-60">
+            <div class="font__14 mx-4 primary--text font-weight-light">
               {{
-                event.description.length > 220
-                  ? event.description.substring(0, 220) + '...'
+                event.description.length > 200
+                  ? event.description.substring(0, 200) + '...'
                   : event.description
               }}
             </div>

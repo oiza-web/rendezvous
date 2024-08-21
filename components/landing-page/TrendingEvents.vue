@@ -32,39 +32,6 @@ export default {
       type: []
     }
   },
-  // data() {
-  //   return {
-  //     events: [
-  //       {
-  //         title: 'ISWIS Live show',
-  //         imageUrl: '/images/two-ladies.png',
-  //         date: `Sun, Oct 3rd 6pm`,
-  //         description:
-  //           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  //         numberTicketsLeft: '5',
-  //         daysLeft: 2,
-  //       },
-  //       {
-  //         title: 'ISWIS Live show',
-  //         imageUrl: '/images/nativ.png',
-  //         date: `Sun, Oct 3rd 6pm`,
-  //         description:
-  //           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  //         numberTicketsLeft: '5',
-  //         daysLeft: 2,
-  //       },
-  //       {
-  //         title: 'ISWIS Live show',
-  //         imageUrl: '/images/basket-mouth.png',
-  //         date: `Sun, Oct 3rd 6pm`,
-  //         description:
-  //           '$Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  //         numberTicketsLeft: '5',
-  //         daysLeft: 2,
-  //       },
-  //     ],
-  //   }
-  // },
 }
 </script>
 
